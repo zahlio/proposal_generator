@@ -1,0 +1,38 @@
+# Configure the Targeting Ideas Service
+# https://developers.google.com/adwords/api/docs/reference/v201609/TargetingIdeaService.TargetingIdeaSelector
+targetingIdeaServiceConfig:
+  searchParameters:
+  - xsi_type: LanguageSearchParameter
+    languages:
+    - id: '1000'
+  - xsi_type: NetworkSearchParameter
+    networkSetting:
+      targetGoogleSearch: true
+      targetSearchNetwork: false
+      targetContentNetwork: false
+      targetPartnerSearchNetwork: false
+  ideaType: KEYWORD
+  requestType: IDEAS
+  requestedAttributeTypes:
+  - KEYWORD_TEXT
+  - SEARCH_VOLUME
+  - CATEGORY_PRODUCTS_AND_SERVICES
+  - AVERAGE_CPC
+  paging:
+    startIndex: 0
+    numberResults: 100
+
+# Configure the Traffic Estimator Service
+# https://developers.google.com/adwords/api/docs/reference/v201609/TrafficEstimatorService.TrafficEstimatorSelector
+trafficEstimatorServiceConfig:
+  platformEstimateRequested: true
+  campaignEstimateRequests:
+  - adGroupEstimateRequests:
+    - maxCpc:
+        microAmount: '1000000'
+        xsi_type: Money
+    criteria:
+    - id: '2840'
+      xsi_type: Location
+    - id: '1000'
+      xsi_type: Language
