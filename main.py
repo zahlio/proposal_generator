@@ -14,12 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""This example demonstrates a new Co-op campaign creation pipeline
+"""This example demonstrates a new Co-op proposal creation pipeline
 
-Given an input of search term or url, fetch a list of keyword ideas. Then, use
-the results as input to the estimate keyword traffic service. If that estimate
-meets some threshold set in configuration, then create a new campaign based off
-of the keyword results from first step.
+Use a list of search terms or urls to derive a set of related search terms and
+their benchmarks. This can be used to generate forecasts and proposals for the
+client and ultimately used to create a new AdWords Campaign.
 
 AUTHOR: Project Raven Team [raven-faq@googlegroups.com]
 

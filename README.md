@@ -2,7 +2,9 @@
 
 **This example demonstrates a new Co-op campaign proposal generation pipeline**
 
-Given an input of search term or url, fetch a list of keyword ideas. Then, use the results as input to the estimate keyword traffic service. If that estimate meets some threshold set in configuration, then create a new campaign based off of the keyword results from first step.
+Use a list of search terms or urls to derive a set of related search terms and their benchmarks. This can be used to generate forecasts and proposals for the client and ultimately used to create a new AdWords Campaign.
+
+Currently this POC demonstrates the inputs and outputs of the TargetingIdeaService & TrafficEstimatorService and logs output to stdout. The output from the TrafficEstimatorService can be used to create a proposal for new AdWords Campaigns.
 
 ### Getting Started
 
